@@ -546,7 +546,7 @@ display: inline-block;
     }
     .footer__form{
         flex-direction: column;
-        
+
     }
     .footer__form-label{
         text-align: center;
