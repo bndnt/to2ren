@@ -442,6 +442,7 @@ width: 470px;
     font-family: 'Roboto Condensed', sans-serif;
     border: none;
     cursor: pointer;
+display: inline-block;
 }
 .footer__logo{
     padding: -3px 0 23px;
@@ -486,6 +487,7 @@ width: 470px;
         margin: 0 auto;
         text-align: center;
     }
+
 }
 
 
@@ -544,6 +546,7 @@ width: 470px;
     }
     .footer__form{
         flex-direction: column;
+        
     }
     .footer__form-label{
         text-align: center;
@@ -553,7 +556,9 @@ width: 470px;
     .footer__form-input{
         margin-bottom: 15px;
         text-align: center;
+        width: 300px;
     }
+
 }
 
 @media (max-width: 768px){
@@ -583,6 +588,12 @@ width: 470px;
     }
     .best{
         min-height: 400px;
+    }
+    .footer__top,
+    .about,
+    .reason,
+    .popular__inner{
+        padding: 50px 0;
     }
 }
 
