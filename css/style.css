@@ -273,10 +273,14 @@ width: 470px;
     line-height: 18px;
     display: inline-block;/*ибо ему пофиг на отступы предыдущего*/
 }
+
 .about{
     background: black;
     color: white;
     padding: 100px 0;
+}
+.about ul{
+    list-style: none;
 }
 
 .about__inner{
@@ -289,64 +293,61 @@ width: 470px;
     line-height: 48px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
 }
 .our-managers{
-    margin-right: 92px;
+    /*margin-right: 92px;*/
+    width: 297px;
 }
 
 .our-managers__title{
     padding-bottom: 27px;
-    width: 263px;
+    /*width: 263px;*/
 }
 .our-managers__items{
     display: flex;
     justify-content: space-between;
-   width: 297px;
+
+    text-align: center;
 }
 .our-managers__item{
     text-align: center;
     line-height: 22px;
 }
-.our-managers__item-img{
+.our-managers__img{
     border-radius: 50%;
     object-fit: cover;
     width: 100px;
     height: 100px;
     margin-bottom: 22px;
 }
-.our-managers-list{
-list-style: none;
+.our-managers_list{
     line-height: 21px;
-    padding-bottom: 43px;
+    margin-bottom: 43px;
 }
-.our-managers__item-btn{
+.our-managers__btn{
     color: black;
     background: white;
     line-height: 18px;
-    text-align: center;
+    /*text-align: center;*/
     padding: 16px 21px;
     border: none;
     cursor: pointer;
 }
 .blog{
     width: 411px;
-    margin-right: 100px;
+    /*margin-right: 100px;*/
 }
-
-.about ul{
-    list-style: none;
-}
-
 
 .blog__link{
     text-decoration: none;
     color: white;
     margin-bottom: 28px;
     padding-left: 67px;
-    display: inline-block;
+    display: inline-block;/*ссылки строчные по умолчанию*/
     list-style: none;
     position: relative;
+    line-height: 18px;
 }
 
 .blog__link::before{
@@ -363,14 +364,14 @@ list-style: none;
     width: 300px;
 }
 .reviews__img{
-    padding-bottom: 22px;
+    margin-bottom: 22px;
     width: 300px;
     height: 127px;
 
 }
 .rewiews__text{
     line-height: 22px;
-    padding-bottom:22px ;
+    margin-bottom:22px ;
 }
 .reviews__link{
     text-decoration: none;
@@ -404,16 +405,16 @@ list-style: none;
     display: flex;
 
 }
-.footer__for-label{
+.footer__form-label{
     width: 82px;
     color: #888;
     margin-right: 10px;
-    display: inline-block;
+    display: flex;
 }
 .footer__form-input{
     width: 511px;
     height: 70px;
-line-height: 24px;
+    line-height: 24px;
     border-radius: 0;
     padding: 0 15px;
     font-size: 18px;
@@ -473,6 +474,18 @@ line-height: 24px;
     .blog{
         margin-left: 150px;
     }
+    .footer__top-inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__menu{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer__menu-list{
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 
@@ -528,6 +541,18 @@ line-height: 24px;
     .our-managers{
         margin: 0 auto;
         max-width: 420px;
+    }
+    .footer__form{
+        flex-direction: column;
+    }
+    .footer__form-label{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .footer__form-input{
+        margin-bottom: 15px;
+        text-align: center;
     }
 }
 
